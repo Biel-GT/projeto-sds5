@@ -1,37 +1,8 @@
-import NavBar from 'components/NavBar';
-import Footer from 'components/Footer';
-import DataTable from 'components/DataTable';
-import BarChart from 'components/BarChart';
-import DonutChart from 'components/DonutChart';
+import MyRoutes from 'MyRoutes';
 
 function App() {
   return (
-    // class é palavra reservada do Typescript, por isso usamos o className
-    // px-3 indica um padding horizontal e py-3 indica um padding na vertical (Bootstrap)
-    <>
-      <NavBar />
-      <div className="container">
-        <h1 className="text-primary py-3">Dashboard de Vendas</h1>
-        
-        <div className="row px-3">
-          <div className="col-sm-6">
-            <h5 className="text-center text-secondary">Taxa de sucesso (%)</h5>
-            <BarChart />
-          </div>
-          <div className="col-sm-6">
-            <h5 className="text-center text-secondary">Todas Vendas</h5>
-            <DonutChart />
-          </div>
-        </div>
-
-        <div className="py-3">
-          <h2 className="text-primary">Todas as vendas</h2>
-        </div>
-
-        <DataTable />
-      </div>
-      <Footer />
-    </>
+    <MyRoutes />
   );
 }
 
